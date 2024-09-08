@@ -7,9 +7,8 @@ This project is a chat application that utilizes Retrieval-Augmented Generation 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
+- [Design RAG Pipeline](#design-the-rag-pipeline-using-langflow)
+- [Credits](#credits)
 - [License](#license)
 
 ## Features
@@ -91,9 +90,19 @@ Start chatting in browser.
 ## Note
 
 As LangFlow does not have any component for [OpenRouter](https://openrouter.ai/), 
-`open_router_custom_component.py` file contains the code of the custom LangFlow component defined in the default pipeline. It's just saved in this repo as a reference and have no functional use. The same code is saved in LangFlow pipeline (`./flows/vector_store_rag.json`) when the custom component was created in pipeline. You can use it for your pipeline in case you want and further customize it as required.
+the file `open_router_custom_component.py` contains the code of the custom LangFlow component defined in the default pipeline (`./flows/vector_store_rag.json`) that comes with this codebase. It's just saved in this repo for reference and have no functional use in app, as the same code is saved in the default LangFlow pipeline (`./flows/vector_store_rag.json`) when the custom component was created in pipeline. You can use it for your pipeline in case you want and further customize it as required.
 
 ## Credits
 
 - **Langflow**: For providing a low-code design tool for building AI RAG pipelines.
 - **Chainlit**: For enabling the creation of interactive chat applications with ease.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+### Summary of the MIT License
+
+The MIT License is a permissive free software license that allows for the software to be used, copied, modified, merged, published, distributed, sublicensed, and sold. It also provides a warranty disclaimer and states that the software is provided "as is," without warranty of any kind.
+
+For more information, please refer to the full text of the license in the [LICENSE](LICENSE) file.
