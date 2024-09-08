@@ -1,0 +1,10 @@
+__pycache__/
+.chainlit/
+.chroma_store/
+.faiss_store/
+.vector_db_store/
+.venv/
+flows/
+local_cache/
+logs/
+.env
